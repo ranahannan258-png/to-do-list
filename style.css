@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: #121212;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
+                0 0 10px rgba(56, 119, 255, 0.2);
+    border: 1px solid #1f1f1f;
+}
+
+/* Input Section */
+.text {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.enter {
+    flex: 1;
+    background: #1f1f1f;
+    border: 2px solid #333;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.enter:focus {
+    border-color: #3877ff;
+    box-shadow: 0 0 8px rgba(56, 119, 255, 0.4);
+}
+
+.add {
+    background-color: #3877ff;
+    color: #000;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.add:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* List Items Section */
+.listcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3877ff;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.listitems {
+    font-size: 1rem;
+    color: #e0e0e0;
+    word-break: break-all;
+}
+
+.delete {
+    background: transparent;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.delete:hover {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+
+
+
+
